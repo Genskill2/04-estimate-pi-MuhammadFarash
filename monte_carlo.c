@@ -38,6 +38,23 @@ int main(void) {
     }
   }
 }
-
+float mc_pi(int count)
+{
+	float circount=0;
+	for(int i=0;i<count;i++)
+	{
+		
+		float x = frandom();
+		float y = frandom();
+		float z = x*x+y*y;
+		float u =sqrt(z);
+		if(u<1)
+		{
+			circount++;
+		}
+	}
+	float area = ((4*circount)/count);
+	return area;
+}
 
 
