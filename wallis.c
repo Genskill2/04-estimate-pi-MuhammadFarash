@@ -23,4 +23,16 @@ int main(void) {
     }
   }
 }
-
+float wallis_pi(int infinity)
+{
+	
+    float pi = 1.0;
+    float pro;
+    float i=1;
+    for (pro=pi;i<500000; i++)
+    {
+        pi=(4*i*i)/(4*i*i-1);	
+ 	pro=pro*pi;
+    }
+    return pro*2;
+}
