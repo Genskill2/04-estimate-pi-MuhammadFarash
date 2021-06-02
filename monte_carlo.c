@@ -40,15 +40,12 @@ int main(void) {
 }
 float mc_pi(int count)
 {
-	int circount=0;
 	for(int i=0;i<count;i++)
 	{
-		
+
 		float x = frandom();
 		float y = frandom();
-		float z = x*x+y*y;
-		float u =sqrt(z);
-		if(u<1)
+		if(sqrt(x*x+y*y)<1)
 		{
 			circount++;
 		}
