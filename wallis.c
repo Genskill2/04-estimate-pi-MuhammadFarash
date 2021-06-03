@@ -23,7 +23,7 @@ int main(void) {
     }
   }
 }
-float wallis_pi(int infinity)
+float wallis_pi(int count)
 {
 	
     float pi = 1.0;
