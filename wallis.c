@@ -32,7 +32,7 @@ float wallis_pi(int infinity)
     for (pro=pi;i<500000; i++)
     {
         pi=(4*i*i)/(4*i*i-1);	
- 	pro=pro*pi;
+ 	pro*=pi;
     }
     return pro*2;
 }
